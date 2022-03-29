@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../CssFiles/file.css";
 import emailLogo from "../images/email.svg";
 import passwordLogo from "../images/password.svg";
+import data from "../data/jsonFiles.json";
 export default function LoginPage() {
   const SubmitBtn = (e) => {
     e.preventDefault();
@@ -18,7 +19,7 @@ export default function LoginPage() {
             <form onSubmit={SubmitBtn}>
               <div>
                 <p className="logo-gradient text-center text-uppercase">
-                  Cloud HR
+                  {data.name}
                 </p>
               </div>
               <div className="mb-3 d-flex justify-content-center">
@@ -62,7 +63,7 @@ export default function LoginPage() {
                 />
               </div>
               <button className="btn btn-primary mt-2 w-25">Login</button>
-              <div>
+              <div className="">
                 <NavLink
                   to="/Forgotpassword"
                   className="text-muted t-decoration-none"
