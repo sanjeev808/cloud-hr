@@ -1,0 +1,58 @@
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.align-center{
+    align-items: center;
+}
+
+.contentContainer{
+    /* background-color: aqua; */
+    flex: 4;
+}
+.boxe-1
+{
+    /* background-color: red; */
+    width: 95%;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+.contentcard1{
+/* margin-right: 20px; */
+/* background-color: yellow; */
+ width: 300px; 
+ padding: 0px 0px 0px 15px;
+ 
+}
+.contentIcon{
+    width: 54px;
+    /* background-color: pink; */
+    margin: 20px 0px 20px 0px;
+}
+
+.contentIcon img{
+    width: 54px;
+    
+}
+.cententHeading h2{
+font: 20px;
+font-weight: 500;
+}
+.contentDetails p{
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.contentHeading1 h2{
+    font-size: 15px;
+}
+ 
