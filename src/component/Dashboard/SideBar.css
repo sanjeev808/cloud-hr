@@ -1,5 +1,5 @@
 .sidebarContainer{
-    background-color: green;
+    background-color: rgb(235, 228, 228);
     flex: 1;
     height: calc(100vh - 100px);
 }

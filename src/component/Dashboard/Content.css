@@ -30,8 +30,15 @@
 /* margin-right: 20px; */
 /* background-color: yellow; */
  width: 300px; 
- padding: 0px 0px 0px 15px;
+ padding: 0px 0px 0px 18px;
+ /* border: 2px solid red; */
+ -webkit-box-shadow: inset 10px 2px 49px 0px rgba(0,0,0,0.42);
+-moz-box-shadow: inset 10px 2px 49px 0px rgba(0,0,0,0.42);
+box-shadow: inset 10px 2px 49px 0px rgba(0,0,0,0.42);
  
+}
+.o-box{
+    margin-top: -20px;
 }
 .contentIcon{
     width: 54px;
