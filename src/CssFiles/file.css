@@ -13,8 +13,8 @@
 .t-decoration-none{
     text-decoration: none;
 }
-.h-60{
-    height: 60%;
+.h-65{
+    height: 65%;
 }
 .emaillogo{
     width: 20px;
@@ -67,4 +67,32 @@
 }
 .bg-none{
     background-color: rgba(0, 0, 0, 0.4)
+}
+.closebtn{
+    border-radius: 50%;
+    height: 23px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 23px;
+}
+.closebtn:hover{
+    border: 1px solid #666464;
+}
+.companyLogo{
+    width: 200px;
+}
+.p-left-right-20{
+padding-left: 20px;
+padding-right: 20px;
+}
+.h-20{
+    height: 20px;
+    width: 100%;
+    border: 1px solid black;
+}
+.pdf-line-below{
+    border-bottom:1px solid rgb(116, 165, 255);
+}
+.t-content{
+text-align: justify ;
 }

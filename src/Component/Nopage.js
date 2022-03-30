@@ -1,4 +1,4 @@
-import "./noPage.css";
+import "../CssFiles/noPage.css";
 import { Link } from "react-router-dom";
 export default function NoPage() {
   return (
