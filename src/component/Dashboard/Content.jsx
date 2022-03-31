@@ -8,13 +8,15 @@ import Employee from '../../img/employee.png'
 import complaint from '../../img/complaint.png'
 import event from '../../img/event.png'
 import hiring from '../../img/hiring.png'
+// import Main from './Main'
 
 
  
 
 
 export default function Content() {
-  return (
+  return (<>
+    
     <div className='contentContainer'>
         <div className='boxe-1 d-flex justify-evenly'>
             <div className='contentcard1'>
@@ -37,7 +39,7 @@ export default function Content() {
                 <img src={Employee} alt="" />
 
                 </div>
-                <div className='cententHeading'><h2>Employees Data</h2></div>
+                <div className='cententHeading'><h2>PayRolls</h2></div>
                 <div className='contentDetails'><p> All information collected by your company about its employees.</p>  </div>
             </div>
         </div>
@@ -70,5 +72,6 @@ An event organizer is responsible for planning, managing, and organizing sensati
         </div>
         </div>
     </div>
+    </>
   )
 }

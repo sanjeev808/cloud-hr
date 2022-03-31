@@ -28,10 +28,12 @@
     width: 40%;
 }
 
-
+.p-fixed{
+    position: fixed;
+}
 .navContainer
 {
-    /* background-color:grey; */
+    background-color:grey;
     width: 100%;
     /* margin: 0px auto; */
     /* padding: 10px; */

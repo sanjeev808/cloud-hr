@@ -1,6 +1,10 @@
 .Payrolls
 {
-    flex: 4;
+    /* flex: 4; */
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 10%;
+    padding-left: 1%;
 }
 .payrolls-form{
     margin-top: 5%;
@@ -66,4 +70,12 @@
 .search
 {
     display: inline;
+}
+/* salary slip */
+
+.salaryslip{
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 10%;
+    padding-left: 1%;
 }

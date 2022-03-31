@@ -7,8 +7,8 @@ import Photo from '../../img/Photo.jpg'
 export default function DashBoard() {
   return (
 
-    <div className='navContainer'>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-between">
+    <div className='navContainer p-fixed'>
+      <nav className="navbar navbar-expand-lg navbar-light bg-white d-flex justify-between">
         <div className="container-fluid">
          <img className='w-10 ms-5 logo' src={cloud} alt="" />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

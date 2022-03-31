@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../payrolls/Payrolls.css";
 import axios from 'axios';
+import { NavLink } from "react-router-dom";
 
 export default function PayRolls() {
     const [user, setgetUser] = useState([])
@@ -10,7 +11,7 @@ export default function PayRolls() {
 
 
     useEffect(() => {
-        axios.get("http://localhost:3000/users").then((resp) => {
+        axios.get("http://localhost:3004/users").then((resp) => {
 
             setgetUser(resp.data)
             console.log(user);
@@ -18,6 +19,7 @@ export default function PayRolls() {
         })
     }, [0])
   
+ 
 
 
 
@@ -58,7 +60,8 @@ export default function PayRolls() {
                     <button className="btn btn-info">Search</button>
                 </div>
             </form>
-            <table className="table">
+            <table className="table" id="myTable">
+            
                 <thead>
                     <tr>
                         <th scope="col">id</th>
@@ -92,7 +95,7 @@ export default function PayRolls() {
                                     <td>{item.role}</td>
                                     <td>{item.salary}</td>
                                    
-                                    <td><button className="btn btn-info">Genertor Slip</button></td> 
+                                    <td><NavLink className="btn btn-info" to="/payrolls/salaryslip/generate" ><button>Genertor Slip </button></NavLink></td> 
                                  
                                 </tr>)
                             })}
