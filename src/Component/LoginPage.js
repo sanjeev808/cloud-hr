@@ -53,7 +53,7 @@ export default function LoginPage() {
   }, [formErrors]);
   useEffect(() => {
     if (token) {
-      return navigate("/Letters");
+      return navigate("/Appraisel");
     }
   }, [token]);
   return (

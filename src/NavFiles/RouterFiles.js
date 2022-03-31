@@ -3,6 +3,7 @@ import App from "../App";
 import Forgotpassword from "../Component/ForgotPassword";
 import NoPage from "../Component/Nopage";
 import Letters from "../Component/Letters";
+import AppraiselSection from "../Component/AppraiselSection";
 export default function RouterFiles() {
   return (
     // Navigation Router Files
@@ -13,7 +14,7 @@ export default function RouterFiles() {
           {/* <Route index element={<Home />} /> */}
         </Route>
         <Route path="/ForgotPassword" element={<Forgotpassword />} />
-        <Route path="/Letters" element={<Letters />} />
+        <Route path="/Appraisel" element={<AppraiselSection />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
