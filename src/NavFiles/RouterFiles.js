@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../App";
 import Forgotpassword from "../Component/ForgotPassword";
 import NoPage from "../Component/Nopage";
-import Letters from "../Component/Letters";
 import AppraiselSection from "../Component/AppraiselSection";
+import SalarySlipGenerate from "../Component/SalarySlipGenerate";
 export default function RouterFiles() {
   return (
     // Navigation Router Files
@@ -15,6 +15,8 @@ export default function RouterFiles() {
         </Route>
         <Route path="/ForgotPassword" element={<Forgotpassword />} />
         <Route path="/Appraisel" element={<AppraiselSection />} />
+
+        <Route path="/SalarySlipGenerate" element={<SalarySlipGenerate />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
