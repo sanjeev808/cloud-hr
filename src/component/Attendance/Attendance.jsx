@@ -1,13 +1,14 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
+import "../Attendance/Attendance.css";
+
 
 export default function Attendance() {
 
-  const Location=useLocation()
-  console.log(Location.pathname)
+
   return (
-    <div>
-       
+    <div className='attend'>
+  cdvfvfdv
     </div>
   )
 }

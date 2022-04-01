@@ -21,7 +21,7 @@
     flex: 4;
     width: 80%;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .boxe-1
@@ -32,17 +32,36 @@
     margin: 0px auto;
 }
 
+.padding1{
+    padding: 6px 28px 23px 20px;
+}
+.padding2{
+    padding: 6px 28px 12px 20px;
+}
+
+.padding3{
+    padding: 6px 28px 50px 20px;
+}
+.padding4{
+    padding: 6px 28px 12px 20px;
+}
+.padding5{
+    padding: 6px 28px 66px 20px;
+}
+.padding6{
+    padding: 6px 28px 66px 20px;
+}
 .contentcard1{
-/* margin-right: 20px; */
-/* background-color: yellow; */
  width: 300px; 
- padding: 0px 0px 0px 18px;
- /* border: 2px solid red; */
- -webkit-box-shadow: inset 10px 2px 49px 0px rgba(0,0,0,0.42);
+-webkit-box-shadow: inset 10px 2px 49px 0px rgba(0,0,0,0.42);
 -moz-box-shadow: inset 10px 2px 49px 0px rgba(0,0,0,0.42);
 box-shadow: inset 10px 2px 49px 0px rgba(0,0,0,0.42);
- 
+cursor: pointer;
+text-decoration: none; 
+color: black;
+
 }
+
 .o-box{
     margin-top: -20px;
 }

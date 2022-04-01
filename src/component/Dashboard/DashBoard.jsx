@@ -3,14 +3,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './StyleDashboard.css'
 import cloud from '../../img/cloud-hr.png'
 import Photo from '../../img/Photo.jpg'
-
+import { NavLink } from 'react-router-dom';
 export default function DashBoard() {
+  let UserName="Sanju";
   return (
 
     <div className='navContainer p-fixed'>
       <nav className="navbar navbar-expand-lg navbar-light bg-white d-flex justify-between">
+       
         <div className="container-fluid">
-         <img className='w-10 ms-5 logo' src={cloud} alt="" />
+        <NavLink to="/home"> <img className='w-10 ms-5 logo' src={cloud} alt="" /></NavLink>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon three" />
           </button>
@@ -19,10 +21,10 @@ export default function DashBoard() {
             </ul>
 
           </div>
-          <button className=' me-3 btn btn-info'>login</button>
+          <div className=' me-3'>Welcome {UserName}</div>
          
           <div className="dropdown me-5" >
-            <button className=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" className="dropdownbtn">
+            <button className=" dropdown-toggle dropdownbtn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
               <img src={Photo} alt="" />
 
             </button>

@@ -1,85 +1,92 @@
 import React from "react";
 import "./SideBar.css";
 import "bootstrap/dist/css/bootstrap.css";
-import admin from '../../img/HR-admin.png'
-import { Link} from "react-router-dom";
-import Attendance from "../Attendance/Attendance";
-// import {LineStyle, TrendingUp} from '@material-ui/icons';
-// import { NavLink ,useLocation} from 'react-router-dom';
-// import Attendance from '../Attendance/Attendance';
+import { NavLink } from 'react-router-dom';
+import attendance from "../../img/attendance.png";
+import document from "../../img/document.png";
+import Employee from "../../img/employee.png";
+import complaint from "../../img/complaint.png";
+import event from "../../img/event.png";
+import hiring from "../../img/hiring.png";
 
 export default function SideBar() {
-  function hello() {
-    console.log("clicked");
-  }
+
   return (
     <div className="sidebar sidebarContainer p-fixed w-20">
       <div className="sidebar-wrapper">
         <div className="sidebarMenu">
           <h3 className="sidebarTitle"> DashBoard</h3>
           <ul className="sidebarList">
-            <div class="trs">
+            <div className="trs">
               <p>
                 <a className="btn admin" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   HR Admin
                 </a>
               </p>
+
               <div className="collapse info" id="collapseExample">
-                <button className="attandence">Attandence</button>
-              </div>
-              {/* <Link to="/Attendance">ATTENDENCE</Link> */}
-              <div className="collapse info" id="collapseExample">
-                <button className="attandence">Employees Document</button>
-              </div>
-              <div className="collapse info" id="collapseExample">
-                <button className="attandence">Payrolls</button>
-              </div>
-              <div className="collapse info" id="collapseExample">
-                <button className="attandence">Complaints</button>
+                <NavLink to="/hr-attendance">
+                  <div className="d-flex align-item">
+                    <div className="attendance-img"><img src={attendance} alt="" /></div>
+                    <div>
+                      <button className="attandence setting">Attendance</button>
+                    </div>
+                  </div>
+                </NavLink>
               </div>
               <div className="collapse info" id="collapseExample">
-                <button className="attandence">Events</button>
+                <NavLink to="/hr-employeedocument">
+                  <div className="d-flex align-item">
+                    <div className="attendance-img"><img src={document} alt="" /></div>
+                    <div>
+                      <button className="attandence setting">Employee Document</button>
+                    </div>
+                  </div>
+                </NavLink>
               </div>
               <div className="collapse info" id="collapseExample">
-                <button className="attandence">New Hiring</button>
+                <NavLink to="/hr-payrolls">
+
+                  <div className="d-flex align-item">
+                    <div className="attendance-img"><img src={Employee} alt="" /></div>
+                    <div>
+                      <button className="attandence setting">PayRolls</button>
+                    </div>
+                  </div>
+
+                </NavLink>
+              </div>
+              <div className="collapse info" id="collapseExample">
+                <NavLink to="/hr-complaint">
+                  <div className="d-flex align-item">
+                    <div className="attendance-img"><img src={complaint} alt="" /></div>
+                    <div>
+                      <button className="attandence setting">Complaint</button>
+                    </div>
+                  </div>
+                </NavLink>
+              </div>
+              <div className="collapse info" id="collapseExample">
+                <NavLink to="/hr-events">
+                  <div className="d-flex align-item">
+                    <div className="attendance-img"><img src={event} alt="" /></div>
+                    <div>
+                      <button className="attandence setting">Events</button>
+                    </div>
+                  </div>
+                </NavLink>
+              </div>
+              <div className="collapse info" id="collapseExample">
+                <NavLink to="/hr-hiring">
+                  <div className="d-flex align-item">
+                    <div className="attendance-img"><img src={hiring} alt="" /></div>
+                    <div>
+                      <button className="attandence setting">New Hiring</button>
+                    </div>
+                  </div>
+                </NavLink>
               </div>
             </div>
-            <div>
-              <p>
-                <a className="btn admin" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                  HR Admin
-                </a>
-              </p>
-              <div className="collapse info" id="collapseExample1">
-                <button className="attandence">Attandence</button>
-              </div>
-            </div>
-
-
-            {/* <li className='sidebarListItem active'>
-            <LineStyle className='sidebarIcon'/>
-            HR-Admin
-            </li> 
-            <li className='sidebarListItem'>
-            <TrendingUp className='sidebarIcon'/>
-            {/* <NavLink to='/attendance'> Attendance </NavLink> */}
-            {/* </li>
-
-            <li className='sidebarListItem'>
-            <TrendingUp className='sidebarIcon'/>
-            Employees Document
-            </li>
-            <li className='sidebarListItem'>
-            <TrendingUp className='sidebarIcon'/>
-            complaint
-            </li>
-            <li className='sidebarListItem'>
-            <TrendingUp className='sidebarIcon'/>
-            Events
-            </li>   <li className='sidebarListItem'>
-            <TrendingUp className='sidebarIcon'/>
-           New Haring
-            </li> */}
           </ul>
         </div >
       </div >

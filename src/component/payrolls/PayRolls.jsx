@@ -36,7 +36,7 @@ export default function PayRolls() {
                 </div>
                 <div className="employee-role">
                     <select name="role" id="role">
-                        <option value="">Select Roll</option>
+                        <option value="">Select Role</option>
                         <option value="">Employee </option>
                         <option value="">Manager</option>
                     </select>
@@ -69,7 +69,7 @@ export default function PayRolls() {
                         <th scope="col">Employee ID</th>
                         <th scope="col">Email</th>
                         <th scope="col">Join Date</th>
-                        <th scope="col">Role</th>
+                        <th scope="col">Team</th>
                         <th scope="col">Salary</th>
                         <th scope="col">Payslip</th>
                     </tr>
@@ -95,7 +95,7 @@ export default function PayRolls() {
                                     <td>{item.role}</td>
                                     <td>{item.salary}</td>
                                    
-                                    <td><NavLink className="btn btn-info" to="/payrolls/salaryslip/generate" ><button>Genertor Slip </button></NavLink></td> 
+                                    <td><NavLink  to="/payrolls/salaryslip/generate" ><button className="btn btn-info">Genertor Slip </button></NavLink></td> 
                                  
                                 </tr>)
                             })}

@@ -1,17 +1,16 @@
 import React from 'react';
-// import Content from './component/Dashboard/Content';
 // import DashBoard from './component/Dashboard/DashBoard';
 // import SideBar from './component/Dashboard/SideBar';
 import './App.css';
+import Routing from './component/Routing';
 // import PayRolls from './component/payrolls/PayRolls';
-import Routes from './component/Routes';
 
 
 
 function App() {
   return (
   <>
-<Routes/>
+<Routing/>
   </>
   );
 }
