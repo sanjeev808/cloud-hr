@@ -8,7 +8,8 @@
       "gender": "female1",
       "role": "Laravel",
       "joinDate":"12-1-2015",
-      "salary":12000
+      "salary":12000,
+      "position":"employee"
     },
     {
       "id": 4144,
@@ -17,7 +18,9 @@
       "gender": "female",
       "role": "C++",
       "joinDate":"12-5-2017",
-      "salary":10000
+      "salary":10000,
+      "position":"manager"
+
     },
     {
       "id": 4143,
@@ -26,7 +29,9 @@
       "gender": "female",
       "role": "Wordpress",
       "joinDate":"15-2-2012",
-      "salary":20000
+      "salary":20000,
+      "position":"employee"
+
     },
     {
       "id": 4141,
@@ -35,6 +40,7 @@
       "gender": "male",
       "role": "Python",
       "joinDate":"13-12-2020",
+      "position":"manager",
       "salary":15000
     },
     {
@@ -44,7 +50,8 @@
       "gender": "male",
       "role": "ReactJS",
       "joinDate":"20-10-2016",
-      "salary":25000
+      "salary":25000,
+      "position":"employee"
     },
     {
       "id": 4126,
@@ -53,7 +60,9 @@
       "gender": "female",
       "role": "PHP",
       "joinDate":"12-10-2017",
-      "salary":30000
+      "salary":30000,
+      "position":"manager"
+
     },
     {
       "id": 4124,
@@ -62,7 +71,9 @@
       "gender": "male",
       "role": "Swift",
       "joinDate":"12-1-2022",
-      "salary":35000
+      "salary":35000,
+      "position":"employee"
+
     },
     {
       "id": 4123,
@@ -71,7 +82,9 @@
       "gender": "male",
       "role": "Fluttor",
       "joinDate":"25-7-2022",
-      "salary":20000
+      "salary":20000,
+      "position":"manager"
+
     },
     {
       "id": 4122,
@@ -80,7 +93,9 @@
       "gender": "male",
       "role": "NodeJS",
       "joinDate":"22-10-2014",
-      "salary":25000
+      "salary":25000,
+      "position":"employee"
+
     },
     {
       "id": 4121,
@@ -89,7 +104,9 @@
       "gender": "female",
       "role": "Angular",
       "joinDate":"10-12-2010",
-      "salary":33000
+      "salary":33000,
+      "position":"manager"
+
     },
     {
       "id": 4120,
@@ -98,6 +115,7 @@
       "gender": "female",
       "role": "VUEJS",
       "joinDate":"20-3-2015",
+      "position":"employee",
       "salary":36000
     },
     {
@@ -107,7 +125,8 @@
       "gender": "male",
       "role": "Digital Marketing",
       "joinDate":"2-5-2005",
-      "salary":12200
+      "salary":12200,
+      "position":"manager"
     },
     {
       "id": 4118,
@@ -116,7 +135,9 @@
       "gender": "female",
       "role": "Machine Learning",
       "joinDate":"12-1-2015",
-      "salary":30000
+      "salary":30000,
+      "position":"employee"
+
     },
     {
       "id": 4117,
@@ -125,7 +146,9 @@
       "gender": "female",
       "role": "Deep Learning",
       "joinDate":"12-5-2020",
-      "salary":20000
+      "salary":20000,
+      "position":"manager"
+
     },
     {
       "id": 4116,
@@ -134,7 +157,9 @@
       "gender": "male",
       "role": "C#",
       "joinDate":"2-12-2010",
-      "salary":10000
+      "salary":10000,
+      "position":"employee"
+
     },
     {
       "id": 4115,
@@ -143,7 +168,8 @@
       "gender": "male",
       "role": "Unity",
       "joinDate":"12-5-2001",
-      "salary":15000
+      "salary":15000,
+      "position":"manager"
     }
   ]
 }

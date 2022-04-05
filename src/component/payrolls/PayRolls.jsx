@@ -5,24 +5,35 @@ import { NavLink } from "react-router-dom";
 
 export default function PayRolls() {
     const [user, setgetUser] = useState([])
-    const [query, setQuery] = useState("")
+     const [data, setData] = useState([]);
 
+    const [query, setQuery] = useState("")
+    // const [searchedCountry, setSearchedCountry] = useState('');
+
+    const [selected, setSelected] = useState("");
+    // const [region, setRegion] = useState('');
 
 
 
     useEffect(() => {
-        axios.get("http://localhost:3004/users").then((resp) => {
+        loadData()
+    }, [0])
 
+    const loadData = () => {
+        axios.get("http://localhost:3004/users").then((resp) => {
             setgetUser(resp.data)
             console.log(user);
-
         })
-    }, [0])
-  
+    }
+
+    const handlerFilter = async (value) =>{
+        return await axios .get(`http://localhost:3004/users?position=${value}`)
+        .then((response) =>{
+            setData(response.data);
+        })
+        // .catch(err) =>{console.log("error")}
+    }
  
-
-
-
     return (
         <div className="Payrolls">
             <div className="employee">
@@ -31,14 +42,14 @@ export default function PayRolls() {
             </div>
             <form action="" className="payrolls-form">
                 <div className="employee-name">
-                    <input type="search" id="name" placeholder="Employee Name" 
-                     onChange={event => {setQuery(event.target.value)}}/>
+                    <input type="search" id="name" placeholder="Employee Name"
+                        onChange={event => { setQuery(event.target.value) }} />
                 </div>
                 <div className="employee-role">
-                    <select name="role" id="role">
-                        <option value="">Select Role</option>
-                        <option value="">Employee </option>
-                        <option value="">Manager</option>
+                    <select name="role" id="role" onChange={event => { handlerFilter(event.target.value) }} >
+                        <option value="select">Select Role</option>
+                        <option value="employee">Employee </option>
+                        <option value="manager">Manager</option>
                     </select>
                 </div>
                 <div className="leave-status">
@@ -61,7 +72,7 @@ export default function PayRolls() {
                 </div>
             </form>
             <table className="table" id="myTable">
-            
+
                 <thead>
                     <tr>
                         <th scope="col">id</th>
@@ -71,35 +82,38 @@ export default function PayRolls() {
                         <th scope="col">Join Date</th>
                         <th scope="col">Team</th>
                         <th scope="col">Salary</th>
+                        <th scope="col">Position</th>
                         <th scope="col">Payslip</th>
                     </tr>
                 </thead>
                 <tbody>
-                  
-                        {
-                            user.filter((val)=>{
-                                if(query == "")
-                                {
-                                    return val
-                                }else if (val.name.toLowerCase().includes(query.toLowerCase())){
-                                    return val
-                                }
-                            }).map((item,index) => {
-                                return (<tr key={index} >
-                                
-                                   <td>{item.id}</td>
-                                    <td>{item.name}</td>
-                                    <td>{item.id}</td>
-                                    <td>{item.email}</td>
-                                    <td>{item.joinDate}</td>
-                                    <td>{item.role}</td>
-                                    <td>{item.salary}</td>
-                                   
-                                    <td><NavLink  to="/payrolls/salaryslip/generate" ><button className="btn btn-info">Genertor Slip </button></NavLink></td> 
-                                 
-                                </tr>)
-                            })}
-                
+
+                    {
+                        user.filter((val) => {
+
+                            if (query == "") {
+                                return val
+                            } 
+                            else if (val.name.toLowerCase().includes(query.toLowerCase())) {
+                                return val
+                            }
+
+                        }).map((item, index) => {
+                            return (<tr key={index} >
+                                <td>{item.id}</td>
+                                <td>{item.name}</td>
+                                <td>{item.id}</td>
+                                <td>{item.email}</td>
+                                <td>{item.joinDate}</td>
+                                <td>{item.role}</td>
+                                <td>{item.salary}</td>
+                                <td>{item.position}</td>
+                              
+                                <td><NavLink to="/payrolls/salaryslip/generate" ><button className="btn btn-info">Genertor Slip </button></NavLink></td>
+
+                            </tr>)
+                        })}
+
 
 
                 </tbody>
